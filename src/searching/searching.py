@@ -28,3 +28,4 @@ def binary_search(arr, target):
 
 
     return -1  # not found
+
