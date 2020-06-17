@@ -1,28 +1,32 @@
 # TO-DO: Complete the selection_sort() function below
+array = [4, 3, 1, 2, 5]
+#https://visualgo.net/en/sorting
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
         cur_index = i
         smallest_index = cur_index
+
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc)
         # Your code here
         for j in range(cur_index + 1, len(arr)):
             if arr[j] < arr[smallest_index]:
                 smallest_index = j
-
-
         # TO-DO: swap
         # Your code here
         arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
 
     return arr
 
-
+selection_sort(array)
+#https://visualgo.net/en/sorting
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     # Your code here
+    #traverse through all elements
     for i in range(len(arr)):
+        #traverse through every single element before the end
         for j in range(len(arr) - 1):
             #is left index greater than right index?
             if arr[i] < arr[j]:
